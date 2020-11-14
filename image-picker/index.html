@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Picker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #prog-lang {
+        width: 30%;
+        height: 30px;
+        /* background-color: orange; */
+        border: none;
+        border-bottom: 3px solid orange;
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dropdown-programming-language">
+        <select name="programming_language" id="prog-lang">
+          <option value="vue">Vue JS</option>
+          <option value="javascript">Javascript</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="php">PHP</option>
+        </select>
+      </div>
+      <div class="img-content" style="margin-top: 60px">
+        <img src="img/vue.png" class="img-thumb" width="300" />
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Rupiah</title>
+    <style>
+      div.wrapper {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="kurs-header">
+        <h3 class="kurs-title">Kurs Rupiah - Mata Uang Asing</h3>
+      </div>
+      <div class="kurs-content">
+        <table border="1">
+          <tr>
+            <th>Masukkan Nilai</th>
+            <th>Valas</th>
+            <th>Nilai Rupiah</th>
+          </tr>
+          <tr>
+            <td><input type="text" class="value" /></td>
+            <td>
+              <select name="valas" class="valas">
+                <option value="dollar_us">Dollar US</option>
+                <option value="dollar_singapore">Dollar Singapore</option>
+                <option value="ringgit_malaysia">Ringgit Malaysia</option>
+                <option value="yen_jepang">Yen Jepang</option>
+                <option value="euro">Euro</option>
+                <option value="riyal_arab_saudi">Riyal Arab Saudi</option>
+              </select>
+            </td>
+            <td><input type="text" class="rupiah-value" readonly /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
